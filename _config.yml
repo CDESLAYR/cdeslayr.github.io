@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Juš Lesjak
+title: CV_template
 email: lesjak.jus@gmail.com
 
 author_firstname: Juš
@@ -25,8 +25,14 @@ author_birth: 26 Sep 2001 - Kranj, SLOVENIA
 author_address: Valjavčeva 33 - 4000 Kranj - SLOVENIA
 
 cv_avatar: 
-cv_description: Nek motovational 30 sec elevator pitch k se ga morm se zmislt.
-cv_thankyou: Thank you!
+cv_description1: Innovation and progress - my two reasons to jump out of the bed in the morning!
+cv_description2 : >- 
+  Combine that with days full of elan, unforgettably crazy ideas put in practice 
+  and a strive for perfection in everything I create and you are looking at
+  the
+cv_description3 : foundational pillars of everything I do-
+cv_description4 : from writing code or through making business ideas happen, and to windsurfing.
+cv_thankyou: Hvala! / Thank you!
 cv_quote: “Whether you say, ‘I can’ or ‘I can’t,’ you’re right either way.”
 cv_quote_author: Jordan Belfort
 
@@ -42,14 +48,14 @@ github_url: https://github.com/CDESLAYR
 
 
 collections:
-  education:
-  fragmetns:
-  interests:
-  portfolio:
-  profileInfos:
-  skills:
-  socialmedia:
-  work:
+  - education
+  - fragments
+  - interests
+  - portfolio
+  - profileInfos
+  - skills
+  - socialmedia
+  - work
 
 defaults:
   -

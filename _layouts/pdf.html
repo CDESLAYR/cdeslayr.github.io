@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Page title -->
+  <title> {{ page.title }} </title> 
+  <!-- /Page title -->
+
+  <!-- CSS Files
+  ========================================================= -->
+  <!-- Google web fonts - Open Sans -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  <!-- /Google web fonts -->
+  <!-- Bootstrap CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- /Bootstrap CSS -->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+  <!-- /Font Awesome -->
+  <!-- Nivo Lightbox -->
+  <link href="vendor/nivo-lightbox/nivo-lightbox.css" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/nivo-lightbox/themes/default/default.css" type="text/css" />
+  <!-- /Nivo Lightbox -->
+  <!-- Animate CSS -->
+  <link href="vendor/animate.css" rel="stylesheet">
+  <!-- /Animate CSS -->
+  <!-- Theme Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/james.css" rel="stylesheet">
+  <!-- Theme Styles -->
+  <!-- / CSS Files
+  ========================================================= -->
+
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="vendor/html5shiv.js"></script>
+    <script src="vendor/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicon and Touch Icons
+  ========================================================= -->
+  <link rel="shortcut icon" href="favicon-vertica.ico" type="image/x-icon">
+  <link rel="icon" href="favicon-vertica.ico" type="image/x-icon">
+  <link href="apple-touch-icon-144.png" rel="apple-touch-icon-precomposed" sizes="144x144">
+  <link href="apple-touch-icon-114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+  <link href="apple-touch-icon-72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+  <link href="apple-touch-icon-57.png" rel="apple-touch-icon-precomposed">
+  <!-- /Favicon
+  ========================================================= -->
+</head>
+
+<body>
+
+<!-- CONTENT
+========================================================= -->
+<section id="content-body" class="container animated">
+  <div class="row" id="intro">
+
+    <!-- Header Colors -->
+    <div class="col-md-10 col-sm-10  col-md-offset-2 col-sm-offset-1 clearfix top-colors">
+      <div class="top-color top-color1"></div>
+      <div class="top-color top-color2"></div>
+      <div class="top-color top-color3"></div>
+      <div class="top-color top-color1"></div>
+      <div class="top-color top-color2"></div>
+    </div>
+    <!-- /Header Colors -->    
+    
+    <!-- Beginning of Content -->
+    <div class="col-md-10 col-sm-10 col-md-offset-2 col-sm-offset-1 resume-container">
+
+      <!-- =============== PROFILE INTRO ====================-->
+      <div class="profile-intro row">
+        <!-- Left Collum with Avatar pic -->
+        <div class="col-md-4 profile-col">
+          <!-- Avatar pic -->
+          <div class="profile-pic">
+            <div class="profile-border">
+              <!-- Put your picture here ( 308px by 308px for retina display)-->
+              <img src="img/avatar.jpg" alt="">
+              <!-- /Put your picture here -->
+            </div>          
+          </div>
+           <!-- /Avatar pic -->
+        </div>
+        <!-- /Left columm with avatar pic -->
+  
+        <!-- Right Columm -->
+        <div class="col-md-7">
+          <!-- Welcome Title-->
+          <h1 class="intro-title1">Hey, i'm <span class="color1 bold">{{ site.author_firstname }} {{ site.author_lastname }}!</span></h1>
+          <!-- /Welcome Title -->
+          <!-- Job - -->
+          <h2 class="intro-title2">{{ site.author_job }}</h2>
+          <!-- /job -->
+          <!-- Description -->
+          <p><strong>Innovation and progress - my two reasons to jump out of the bed in the morning! </strong>Combine that with days full of elan, unforgettably crazy ideas put in practice and a strive for perfection in everything I create and you are looking at the <strong>foundational pillars of everything I do-</strong> from writing code and making business ideas happen, to windsurfing.</p>
+          <!-- /Description -->
+        </div>
+        <!-- /Right Collum -->
+      </div>
+      <!-- ============  /PROFILE INTRO ================= -->
+      
+      <!-- ============  TIMELINE ================= -->
+      <div class="timeline-wrap">
+        <div class="timeline-bg">
+
+          <!-- ====>> SECTION: PROFILE INFOS <<====-->
+          <section class="timeline profile-infos">
+
+            <!-- VERTICAL MARGIN (necessary for the timeline effect) -->
+            <div class="line row timeline-margin">
+              <div class="content-wrap">
+                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height"></div>
+                <div class="col-md-9 bg1 full-height"></div>
+              </div>
+            </div>
+            <!-- /VERTICAL MARGIN -->
+
+            <!-- SECTION TITLE -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs timeline-title full-height">
+              </div>
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <!-- Section title -->
+                <h2 class="section-title">Profile</h2>
+                <!-- /Section title -->
+              </div>
+              <!-- /Item Content -->
+              <!-- Margin Collum-->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- / Margin Collum-->
+            </div>
+            <!-- /SECTION TITLE -->
+
+            {% for info in site.profileInfos %}
+
+              {{ info }}
+              
+            {% endfor %}
+
+          </section>
+          <!-- ==>> /SECTION: PROFILE INFOS -->     
+
+          <!-- ====>> SECTION: EDUCATION <<====-->
+          <section class="timeline education" id="education">
+
+            <!-- Margin (necessary for the timeline effect) -->
+            <div class="line row timeline-margin">
+              <div class="content-wrap">
+                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height"></div>
+                <div class="col-md-9 bg1 full-height"></div>
+              </div>
+            </div>
+            <!-- /Margin -->
+
+            <!-- SECTION TITLE -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs timeline-title full-height">
+              </div>              
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <!-- Section title -->
+                <h2 class="section-title">Education</h2>
+                <!-- /Section title -->
+              </div>
+              <!-- /Item Content -->
+              <!-- Margin Collum-->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- /Margin Collum-->
+            </div>
+            <!-- /SECTION TITLE -->
+
+            {% for education in site.education %}
+
+                {{ education }}
+
+            {% endfor %}
+ 
+          </section>
+          <!-- ==>> /SECTION: EDUCATION <<==== -->  
+
+          <!-- ====>> SECTION: WORK EXPERIENCE <<====-->
+          <section class="timeline work-experience" id="works">
+
+            <!-- VERTICAL MARGIN (necessary for the timeline effect) -->
+            <div class="line row timeline-margin">
+              <div class="content-wrap">
+                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height"></div>
+                <div class="col-md-9 bg1 full-height"></div>
+              </div>
+            </div>
+            <!-- /VERTICAL MARGIN -->
+
+            <!-- SECTION TITLE -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs timeline-title full-height"></div>
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <!-- Section title -->
+                <h2 class="section-title">Work Experience</h2>
+                <!-- /Section title -->
+              </div>
+              <!-- /Item Content -->
+              <!-- Margin Collum-->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- /Margin Collum-->
+            </div>
+            <!-- /SECTION TITLE -->
+
+            {% for work in site.work %}
+
+              {{ work }}
+
+            {% endfor %}
+
+          </section>
+          <!-- ==>> /SECTION: WORK EXPERIENCE <<==== --> 
+
+          <!-- ====>> SECTION: SKILLS <<====-->
+          <section class="timeline skills" id="skills">
+
+            <!-- VERTICAL MARGIN (necessary for the timeline effect) -->
+            <div class="line row timeline-margin">
+              <div class="content-wrap">
+                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height"></div>
+                <div class="col-md-9 bg1 full-height"></div>
+              </div>
+            </div>
+            <!-- /VERTICAL MARGIN -->
+
+            <!-- SECTION TITLE -->
+            <div class="line row">
+              <!-- VERTICAL MARGIN (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs timeline-title full-height"></div>
+              <!-- /VERTICAL MARGIN (necessary for the timeline effect) -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <!-- Section title -->
+                <h2 class="section-title">Skills</h2>
+                <!-- /Section title -->
+              </div>
+              <!-- /Item Content -->
+              <!-- Margin Collum-->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- /Margin Collum-->
+            </div>
+            <!-- /SECTION TITLE -->
+
+            {% for skills in site.skills %}
+
+              {{ skills }}
+
+            {% endfor %}
+
+          </section>
+          <!-- ==>> /SECTION: SKILLS -->
+
+          <!-- ====>> SECTION: INTERESTS <<====-->
+          <section class="timeline" id="interests">
+
+            <!-- VERTICAL MARGIN (necessary for the timeline effect) -->
+            <div class="line row timeline-margin">
+              <div class="content-wrap">
+                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height"></div>
+                <div class="col-md-9 bg1 full-height"></div>
+              </div>
+            </div>
+            <!-- /VERTICAL MARGIN -->
+
+            <!-- SECTION TITLE -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs timeline-title full-height"></div>
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <!-- Section title -->
+                <h2 class="section-title">Interests</h2>
+                <!-- /Section title -->
+              </div>
+              <!-- /Item Content -->
+              <!-- Margin Collum-->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- /Margin Collum-->
+            </div>
+            <!-- /SECTION TITLE -->
+
+            {% for interest in site.interests %}
+
+              {{ interest }}
+
+            {% endfor %}
+
+          </section>
+          <!-- ==>> /SECTION: INTERESTS -->
+
+           <!-- ====>> SECTION: PORTFOLIO <<====-->
+          <section class="timeline portfolio" id="portfolio">
+
+            <!-- VERTICAL MARGIN (necessary for the timeline effect) -->
+            <div class="line row timeline-margin">
+              <div class="content-wrap">
+                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height"></div>
+                <div class="col-md-9 bg1 full-height"></div>
+              </div>
+            </div>
+            <!-- /VERTICAL MARGIN -->
+
+            <!-- SECTION TITLE -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs timeline-title full-height"></div>
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <!-- Section title -->
+                <h2 class="section-title">Portfólio</h2>
+                <!-- /Section title -->
+              </div>
+              <!-- Item Content -->
+              <!-- Margin Collum-->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- /Margin Collum-->
+            </div>
+            <!-- /SECTION TITLE -->
+
+            <!-- SECTION ITEM -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point "></div>
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <div class="line-content">
+                  <!-- Subtitle -->
+                  <h3 class="section-item-title-1">Some of my Works</h3>
+                  <!-- /Subtitle -->
+                  <!-- content -->
+                  <div class="portfolio-itens clearfix">  
+                    
+                    {% for item in site.portfolio %}
+
+                      {{ item }}
+        
+                    {% endfor %}
+
+                  </div>
+                  <!-- /Content -->
+                </div>
+              </div>
+              <!-- Item Content -->
+              <!-- Margin Collum-->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- /Margin Collum-->
+            </div>
+            <!-- /SECTION ITEM -->
+          </section>
+          <!-- ==>> /SECTION: PORTFOLIO -->
+        
+          <!-- ====>> SECTION: CONTACT <<====-->
+          <section class="timeline" id="contact">
+
+            <!-- VERTICAL MARGIN (necessary for the timeline effect) -->
+            <div class="line row timeline-margin">
+              <div class="content-wrap">
+                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height"></div>
+                <div class="col-md-9 bg1 full-height"></div>
+              </div>
+            </div>
+            <!-- /VERTICAL MARGIN -->
+
+            <!-- SECTION TITLE -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs timeline-title full-height"></div>
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <!-- Section title -->
+                <h2 class="section-title">Contact</h2>
+                <!-- /Section title -->
+              </div>
+              <!-- /Item Content -->
+              <!-- Margin Collum-->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- / Margin Collum-->
+            </div>
+            <!-- /SECTION TITLE -->
+
+            <!-- SECTION ITEM -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-mail "></div>
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <div class="line-content contact-content">
+                  <!-- Subtitle -->
+                  <h3 class="section-item-title-1">Send me a message</h3>
+                  <!-- /Subtitle -->
+                  <!-- content -->
+                  <div class="row">
+                    <!-- Contact infos -->                 
+                    <div class="col-md-4 contact-infos">
+                      <h4 class="contact-subtitle-1">Address</h4>
+                      <p>{{ site.author_address }}</p>
+                      <h4 class="contact-subtitle-1">Phone</h4>
+                      <p>{{ site.author_phone }}</p>
+                      <h4 class="contact-subtitle-1">Mail</h4>
+                      <p>{{ site.author_email }}</p>
+                    </div>
+                    <!-- /Contact infos --> 
+                  </div>
+                  <!-- /Content -->
+                </div>
+              </div>
+              <!-- /Item Content -->
+              <!-- Margin Collum-->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!--/ Margin Collum-->
+            </div>
+            <!-- /SECTION ITEM -->            
+          </section>
+          <!-- ==>> /SECTION: CONTACT -->
+
+<!-- Javascript Files
+========================================================= -->
+<!-- jQuery (necessary for plugins) -->
+<script src="vendor/jquery-1.11.1.min.js"></script>
+<!-- /jquery -->
+<!-- bootstrap -->
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!-- /bootstrap -->
+<!-- easing -->
+<script src="vendor/jquery.easing.min.js"></script>
+<!-- /easing -->
+<!-- jQuery Mousewheel -->
+<script src="vendor/jquery.mousewheel.min.js"></script>
+<!-- /jQuery Mousewheel -->
+<!-- jQuery Mousewheel Smoothscroll -->
+<script src="vendor/jquery.nicescroll.min.js"></script>
+<script src="vendor/jquery.nicescroll.plus.js"></script>
+<!-- /jQuery Mousewheel Smoothscroll -->
+<!-- Waypoints (for CSS3 animations) -->
+<script src="vendor/waypoints.min.js"></script>
+<!-- /waypoints -->
+<!-- Modal box-->
+<script src="vendor/nivo-lightbox/nivo-lightbox.min.js"></script>
+<!-- /Modal Box -->
+<!-- Carousel-->
+<script src="vendor/jquery.bxslider.min.js"></script>
+<!-- /Carousel -->
+<!-- Front-end Validator (for forms) -->
+<script src="vendor/jquery.validate.min.js"></script>
+<!-- /Front-end Validator -->
+<!-- placeholder Support for IE -->
+<script src="vendor/placeholders.jquery.min.js"></script>
+<!-- /placeholder support -->
+<!-- Cross-browser -->
+<script src="vendor/cross-browser.js"></script>
+<!-- /Cross-browser -->
+<!-- Configurations -->
+<script src="js/main.js"></script>
+<!-- /Configurations -->
+</body>
+</html>

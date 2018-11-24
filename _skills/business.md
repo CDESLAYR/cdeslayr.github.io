@@ -1,9 +1,9 @@
 ---
 title: Business Skills
 subtitle1: Marketing
-completion1: 85%
+completion1: 75%
 subtitle2: Finance
 completion2: 66%
 subtitle3: Negotiation
-completion3: 75%
+completion3: 65%
 ---
