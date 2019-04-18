@@ -25,26 +25,24 @@ author_birth: 26 Sep 2001 - Kranj, SLOVENIA
 author_address: Valjavčeva 33 - 4000 Kranj - SLOVENIA
 
 cv_avatar: 
-cv_description1: Innovation and progress - my two reasons to jump out of the bed in the morning!
+cv_description1: Innovation and progress – my two reasons to jump out of the bed in the morning!
 cv_description2 : >- 
   Combine that with days full of elan, unforgettably crazy ideas put in practice 
   and a strive for perfection in everything I create and you are looking at
   the
-cv_description3 : foundational pillars of everything I do-
+cv_description3 : foundational pillars of everything I do –
 cv_description4 : from writing code or through making business ideas happen, and to windsurfing.
 cv_thankyou: Hvala! / Thank you!
 cv_quote: “Whether you say, ‘I can’ or ‘I can’t,’ you’re right either way.”
 cv_quote_author: Jordan Belfort
 
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  CV website built on Jekyll using styling template Vertica.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-github_username:  CDESLAYR
-github_url: https://github.com/CDESLAYR
+github_username:  juslesjak
+github_url: https://github.com/juslesjak
 
 
 collections:

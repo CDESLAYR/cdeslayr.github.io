@@ -1,11 +1,9 @@
 ---
 title: Language Skills
-subtitle1: German
-completion1: 67%
-subtitle2: Korean
-completion2: 4%
-subtitle3: English
-completion3: 85%
-subtitle4: Slovenian
-completion4: 100%
+subtitle1: English
+completion1: 85%
+subtitle2: German
+completion2: 65%
+subtitle3: Slovenian
+completion3: 100%
 ---
